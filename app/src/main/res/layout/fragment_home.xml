@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/drawerlayoutMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".view.MainActivity"
+            android:background="@color/orginal">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:background="@color/orginal"
+                android:id="@+id/appbarMain"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    app:layout_scrollFlags="scroll"
+                    app:title=""
+                    android:background="@color/orginal"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp">
+
+
+                    <ImageView
+                        android:src="@drawable/notif"
+                        android:layout_marginEnd="20dp"
+                        android:layout_gravity="end"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_width="20dp"
+                        android:layout_height="23dp"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:src="@drawable/menu"
+                        android:layout_gravity="start"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="40dp"
+                        android:layout_height="28dp"
+                        tools:ignore="ContentDescription" />
+
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <EditText
+                android:id="@+id/edittext_Search"
+                android:background="@drawable/edittext"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="search movies"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_search"
+                android:drawableTint="@color/white1"
+                android:gravity="center|start"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white1"
+                tools:ignore="Autofill,LabelFor,RtlSymmetry,TextFields" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="15dp"
+                android:id="@+id/Recycler_genres"
+                tools:listitem="@layout/layout_genres"
+                tools:itemCount="3"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/linearlayout4"
+                android:alpha="0"
+                android:translationX="-1300dp"
+                android:translationY="-1300dp"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Now Playing"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:src="@drawable/subject"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:padding="15dp"
+                android:id="@+id/Recycler_Category"
+                tools:itemCount="5"
+                tools:listitem="@layout/item_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

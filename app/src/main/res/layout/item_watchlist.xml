@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/item_watchlist">
+
+    <ImageView
+        android:id="@+id/image_watchlist"
+        android:layout_margin="2dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="matrix"
+        android:src="@drawable/subject"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitle_watchList"
+        android:layout_width="0dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="John Wick: Chapter 4"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_watchlist"
+        app:layout_constraintTop_toTopOf="@+id/image_watchlist" />
+
+
+    <TextView
+        android:id="@+id/year_watchlist"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:drawableStart="@drawable/years"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"
+        android:gravity="center"
+        android:text="2023"
+        app:layout_constraintStart_toStartOf="@+id/txtTitle_watchList"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle_watchList" />
+
+
+    <TextView
+        android:id="@+id/rating_watchlist"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:drawableStart="@drawable/star"
+        android:drawablePadding="10dp"
+        android:text="8.5"
+        app:drawableTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/year_watchlist"
+        app:layout_constraintEnd_toEndOf="@+id/txtTitle_watchList"
+        app:layout_constraintStart_toEndOf="@+id/year_watchlist"
+        app:layout_constraintTop_toTopOf="@+id/year_watchlist" />
+
+    <TextView
+        android:id="@+id/time_watchlist"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/time"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/white"
+        android:text="2 hr 50 min"
+        app:layout_constraintStart_toStartOf="@+id/year_watchlist"
+        app:layout_constraintTop_toBottomOf="@+id/year_watchlist" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

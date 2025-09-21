@@ -1,9 +1,39 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Theme.MoviesApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/orginal</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Background and surface -->
+        <item name="colorSurface">@color/orginal</item>
+
+        <!-- Status bar & navigation bar -->
+        <item name="statusBarBackground">@color/orginal</item>
+        <item name="android:navigationBarColor">@color/orginal</item>
+        <item name="android:statusBarColor">@color/orginal</item>
+
+
+        <item name="fontFamily">@font/font</item>
+
+        <item name="android:layoutDirection">ltr</item>
+
+
+
+        <!-- اگه بخوای متن (آیکون‌ها) روشن باشن -->
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
     <!-- Base application theme. -->
     <style name="Base.Theme.MoviesApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- برای شفاف کردن StatusBar -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <!-- اگه بخوای متن (آیکون‌ها) روشن باشن -->
+        <item name="android:windowLightStatusBar">false</item>
     </style>
 
-    <style name="Theme.MoviesApp" parent="Base.Theme.MoviesApp" />
 </resources>
