@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     android:id="@+id/drawerlayoutMain"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,54 +7,227 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
-    <androidx.core.widget.NestedScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:background="@color/orginal"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1"
+            android:text="home"
+            android:translationX="-150dp"
+            android:drawableStart="@drawable/home"
+            android:drawableTint="@color/white"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2"
+            android:text="profile"
+            android:translationX="-150dp"
+            android:drawableStart="@drawable/profile"
+            android:drawableTint="@color/white"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn3"
+            android:text="Like"
+            android:translationX="-150dp"
+            android:drawableStart="@drawable/like1"
+            android:drawableTint="@color/white"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn4"
+            android:text="Notif"
+            android:translationX="-150dp"
+            android:drawableStart="@drawable/notif"
+            android:drawableTint="@color/white"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn5"
+            android:text="search"
+            android:translationX="-150dp"
+            android:drawableStart="@drawable/ic_search"
+            android:drawableTint="@color/white"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn6"
+            android:text="Genres"
+            android:translationX="-150dp"
+            android:drawableStart="@drawable/category"
+            android:drawableTint="@color/white"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn7"
+            android:text="Settings"
+            android:translationX="-150dp"
+            android:drawableStart="@drawable/setting"
+            android:drawableTint="@color/white"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn8"
+            android:text="Updates"
+            android:translationX="-150dp"
+            android:drawableStart="@drawable/update"
+            android:drawableTint="@color/white"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn9"
+            android:text="Help / FAQ"
+            android:translationX="-150dp"
+            android:drawableStart="@drawable/help"
+            android:drawableTint="@color/white"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn10"
+            android:text="Language"
+            android:translationX="-150dp"
+            android:drawableStart="@drawable/language"
+            android:drawableTint="@color/white"
+            android:padding="5dp"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn11"
+            android:text="Contact Us"
+            android:translationX="-150dp"
+            android:drawableStart="@drawable/help"
+            android:drawableTint="@color/white"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/NestedScrollView_Menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/orginal"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:id="@+id/main"
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:context=".view.MainActivity"
-            android:background="@color/orginal">
+            android:background="@color/orginal"
+            android:orientation="vertical"
+            tools:context=".view.MainActivity">
 
             <com.google.android.material.appbar.AppBarLayout
-                android:background="@color/orginal"
                 android:id="@+id/appbarMain"
-                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/orginal">
 
                 <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolbar"
-                    app:layout_scrollFlags="scroll"
-                    app:title=""
-                    android:background="@color/orginal"
                     android:layout_width="match_parent"
-                    android:layout_height="56dp">
+                    android:layout_height="56dp"
+                    android:background="@color/orginal"
+                    app:layout_scrollFlags="scroll"
+                    app:title="">
 
 
                     <ImageView
-                        android:src="@drawable/notif"
-                        android:layout_marginEnd="20dp"
-                        android:layout_gravity="end"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
                         android:layout_width="20dp"
                         android:layout_height="23dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="20dp"
+                        android:src="@drawable/notif"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="ContentDescription" />
 
                     <ImageView
-                        android:src="@drawable/menu"
-                        android:layout_gravity="start"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
+                        android:id="@+id/item_menu"
                         android:layout_width="40dp"
                         android:layout_height="28dp"
+                        android:layout_gravity="start"
+                        android:src="@drawable/menu"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="ContentDescription" />
 
 
@@ -65,67 +238,67 @@
 
             <EditText
                 android:id="@+id/edittext_Search"
-                android:background="@drawable/edittext"
-                android:focusable="false"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:hint="search movies"
-                android:padding="10dp"
+                android:background="@drawable/edittext"
                 android:drawableStart="@drawable/ic_search"
                 android:drawableTint="@color/white1"
+                android:focusable="false"
                 android:gravity="center|start"
+                android:hint="search movies"
+                android:padding="10dp"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white1"
                 tools:ignore="Autofill,LabelFor,RtlSymmetry,TextFields" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_marginTop="15dp"
                 android:id="@+id/Recycler_genres"
-                tools:listitem="@layout/layout_genres"
-                tools:itemCount="3"
-                android:layout_marginStart="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"/>
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                tools:itemCount="3"
+                tools:listitem="@layout/layout_genres" />
 
 
             <LinearLayout
                 android:id="@+id/linearlayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:alpha="0"
-                android:translationX="-1300dp"
-                android:translationY="-1300dp"
                 android:orientation="vertical"
                 android:padding="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:translationX="-1300dp"
+                android:translationY="-1300dp">
 
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="Now Playing"
                     android:textColor="@color/white"
                     android:textStyle="bold"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     tools:ignore="HardcodedText" />
 
                 <ImageView
-                    android:src="@drawable/subject"
-                    android:scaleType="fitXY"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/subject" />
 
             </LinearLayout>
 
 
             <androidx.recyclerview.widget.RecyclerView
-                android:padding="15dp"
                 android:id="@+id/Recycler_Category"
-                tools:itemCount="5"
-                tools:listitem="@layout/item_category"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                tools:itemCount="5"
+                tools:listitem="@layout/item_category" />
 
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
